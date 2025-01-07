@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <!--Font Awesome CDN-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--css file-->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <form class="SignUpForm">
+            <h2>SignUp Form</h2>
+            <p>
+                <label for="">Full Name:</label><br>
+                <input type="text" name="fullname" placeholder="Enter Full Name" class="text name">
+                <i class="fa-solid nameCheck icon"></i>
+                <span class="nameError"></span>
+            </p>
+            <p>
+                <label for="">Email:</label><br>
+                <input type="email" name="email" placeholder="XYZ@gmail.com" class="text email">
+                <i class="fa-solid emailCheck icon"></i>
+                <span class="emailError"></span>
+            </p>
+            <p>
+                <label for="">Password:</label><br>
+                <input type="password" name="password" placeholder="At least 8 characters" class="text password">
+                <i class="fa-solid passwordCheck icon"></i>
+                <span class="passwordError"></span>
+            </p>
+
+            <button class="subBtn">Create Account</button>
+            <p class="login">Already have an account?<a href="#">Login</a></p>
+        </form>
+    </div>
+<script src="script.js"></script>
+</body>
+
+</html>

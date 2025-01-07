@@ -1,0 +1,128 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100vh;
+    background-image: url(bg1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    font-family: sans-serif;
+    color: white;
+
+}
+
+div.container {
+    margin: 3rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    box-shadow: 0 0 7px lightskyblue;
+    height: auto;
+    width: 70%;
+    max-width: 420px;
+    padding-left: 40px;
+    padding-right: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+
+h2 {
+    text-align: center;
+    color: #5a99e5;
+}
+
+label {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 90%;
+    padding: 12px;
+    outline: none;
+    border: none;
+    font-size: 18px;
+    font-weight: 700;
+    color: #388cf2;
+    cursor: pointer;
+}
+
+.subBtn {
+    width: 95%;
+    padding: 12px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: rgb(32, 126, 241);
+    border: none;
+    border-radius: 2px;
+    color: white;
+    cursor: pointer;
+}
+
+.subBtn:hover {
+    background-color: #1768cc;
+    transform: scale(1.05);
+    transition: all 1s ease-in-out;
+}
+
+.text::placeholder {
+    font-size: 15px;
+}
+
+p.login {
+    text-align: center;
+    padding-bottom: 20px;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+p.login a {
+    text-decoration: none;
+    color: white;
+    padding-left: 2px;
+    cursor: pointer;
+}
+
+p.login a {
+    text-decoration: underline;
+    color: #15e115;
+
+}
+
+span {
+    color: #15e115;
+}
+
+i.icon {
+    position: absolute;
+    right: 35px;
+    top: 35px;
+    color: #15e115;
+    font-size: 20px;
+
+}
+
+p,
+.subBtn {
+    margin-top: 20px;
+}
+
+p {
+    position: relative;
+}
+
+/*hide eye icon in password field*/
+
+input[type="password"]::-webkit-reveal-button,
+input[type="password"]::-ms-reveal,
+input[type="password"]::-ms-clear {
+    display: none;
+}
