@@ -126,3 +126,13 @@ input[type="password"]::-ms-reveal,
 input[type="password"]::-ms-clear {
     display: none;
 }
+
+
+@media(max-width:450px){
+   p.login{
+    display:none;
+   } 
+   button.subBtn{
+    margin-bottom: 2rem;
+   }
+}
