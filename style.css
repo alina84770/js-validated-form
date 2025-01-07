@@ -135,4 +135,7 @@ input[type="password"]::-ms-clear {
    button.subBtn{
     margin-bottom: 2rem;
    }
+   i.icon {
+    right: 18px;
+}
 }
