@@ -5,6 +5,7 @@ let emailError = document.querySelector(".emailError");
 let passwordError = document.querySelector(".passwordError");
 let inputFields = document.querySelectorAll('input');
 let i = document.querySelectorAll('.icon');
+
 //form prevention
 subBtn.addEventListener("click", (e) => {
     e.preventDefault();
@@ -13,23 +14,16 @@ subBtn.addEventListener("click", (e) => {
 
         //clear input fields after form submission
         form.reset();
-        // document.querySelector(".name").value = "";
-        // document.querySelector(".email").value = "";
-        // document.querySelector(".password").value = "";
-
+        
         //remove check icons after form submission
-
         for(let icon of i){
             icon.style.display="none";
         }
-        // document.querySelector(".nameCheck").style.display = "none";
-        // document.querySelector(".emailCheck").style.display = "none";
-        // document.querySelector(".passwordCheck").style.display = "none";
     }
-
-
-
 });
+
+
+
 
 
 //validate Name
